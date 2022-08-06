@@ -1,12 +1,13 @@
 import { MessageView, ChatTools, ChatInput } from './components';
+import { StyledChatView } from './styled';
 
 function ChatView() {
     return (
-        <div className="chat-view">
+        <StyledChatView className="chat-view">
             <MessageView />
             <ChatTools />
             <ChatInput />
-        </div>
+        </StyledChatView>
     );
 }
 
