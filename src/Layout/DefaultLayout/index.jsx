@@ -1,8 +1,13 @@
+import { StyledLayout } from "./styled";
+import { SidebarNav, ResizeHandle } from './components';
+
 function DefaultLayout({ children }) {
     return (
-        <div>
-
-        </div>
+        <StyledLayout className="container">
+            <SidebarNav />
+            <ResizeHandle />
+            {children}
+        </StyledLayout>
     );
 }
 

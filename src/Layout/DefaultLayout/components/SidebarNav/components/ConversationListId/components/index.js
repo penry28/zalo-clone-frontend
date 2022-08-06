@@ -1,0 +1,1 @@
+export { default as MsgItem } from './MsgItem';

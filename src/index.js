@@ -3,15 +3,15 @@ import ReactDOM from 'react-dom/client';
 import App from '~/App';
 import reportWebVitals from './reportWebVitals';
 import GlobalStyles from '~/components/GlobalStyles';
-import { UIEventProvider } from './context/UIEvent';
+import { StoreProvider } from './store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
         <GlobalStyles>
-            <UIEventProvider>
+            <StoreProvider>
                 <App />
-            </UIEventProvider>
+            </StoreProvider>
         </GlobalStyles>
     </React.StrictMode>
 );

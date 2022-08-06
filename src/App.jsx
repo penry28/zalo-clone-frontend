@@ -15,6 +15,7 @@ function App() {
                             ? route.layout
                             : DefaultLayout;
                     const Page = route.component;
+
                     return (
                         <Route
                             key={index}
