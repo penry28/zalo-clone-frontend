@@ -17,7 +17,7 @@ function MessageView() {
                     <div className="message-view__scroll__inner">
                         <div
                             style={{
-                                height: 'calc(100vh - 68px)',
+                                height: 'calc(100vh - 68px - 60px)',
                                 overflowY: 'scroll',
                                 padding: '10px 0',
                             }}

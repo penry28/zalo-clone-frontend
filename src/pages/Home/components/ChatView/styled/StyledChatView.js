@@ -153,7 +153,114 @@ const StyledChatView = styled.div`
 
     /* chat-input */
     .chat-input {
+        background: #fff;
+        flex: none;
+        position: relative;
+        height: 60px;
+        overflow: hidden;
+        &__content {
+            border-top: 1px solid #e1e4ea;
+            background-color: #fff;
+            height: 100%;
+            width: 100%;
+            &__input {
+                width: 100%;
+                height: 100%;
+            }
+            #chatInputv2 {
+                display: flex;
+                flex-flow: row nowrap;
+            }
+        }
+        &-container {
+            width: 100%;
+            display: flex;
+            border-top: 1px solid #ececec;
+        }
+        &-mainContent {
+            flex: 0 0 90%;
+            max-width: 90%;
+        }
+        &-control {
+            user-select: text;
+            text-shadow: 0 0 0 rgba(0,0,0,0.5);
+            box-sizing: border-box;
+            min-height: 16px;
+            max-height: 182px;
+            justify-content: center;
+            flex-direction: column;
+            line-height: normal;
+            font-weight: 400;
+            font-size: 15px;
+            letter-spacing: normal;
+            padding: 12px 10px 18px 16px;
+            overflow: auto;
+            flex: 1 1 auto;
+            position: relative;
+            word-break: break-all;
+            word-break: break-word;
+            word-wrap: break-word;
+            outline: none;
+            border: none;
+            width: 100%;
+            height: 100%;
+        }
 
+        &-btns {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .input-btn {
+                align-self: flex-end;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .send-btn-chatbar {
+                margin-bottom: 15px;
+                width: 45px;
+                padding: 0;
+                text-transform: uppercase;
+                height: 40px;
+                min-width: 40px;
+                font-weight: 600;
+                font-size: 15px;
+                letter-spacing: normal;
+                line-height: 38px;
+                background: transparent;
+                color: #394e60;
+                white-space: nowrap;
+                text-align: center;
+                border: none;
+                cursor: pointer;
+                user-select: none;
+                touch-action: manipulation;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: inherit;
+            }
+            .imgHolder {
+                width: 24px;
+                height: 24px;
+                font-size: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+            }
+            .emoji-outer {
+                display: inline-block;
+                overflow: hidden;
+                letter-spacing: 50px;
+                color: transparent;
+                text-shadow: none;
+            }
+        }
     }
 `;
 
